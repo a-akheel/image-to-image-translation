@@ -1,0 +1,14 @@
+{
+  "crop_size": 128,
+  "load_size": 128,
+  "dim": 64,
+  "fc_dim": 1024,
+  "batch_size": 32,
+  "epochs": 60,
+  "decay_start": 30,
+  "learning_rate": 0.0002,
+  "n_d": 5,
+  "seed": 100,
+  "sample_every": 600,
+  "save_every": 6000
+}

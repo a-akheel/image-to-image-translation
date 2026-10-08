@@ -1,0 +1,43 @@
+{
+  "scope": "Full architecture, synthetic random images, CPU/GPU mechanics only. Not quality or a full-training ETA.",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "tensorflow": "2.20.0",
+  "devices": [
+    "CPU"
+  ],
+  "batch_size": 2,
+  "crop_size": 128,
+  "repetitions": 3,
+  "generator_parameters": 43467011,
+  "discriminator_parameters": 44718990,
+  "timings": {
+    "discriminator": {
+      "median_seconds": 0.24730883300071582,
+      "runs_seconds": [
+        0.2796182919992134,
+        0.24730883300071582,
+        0.24640966700098943
+      ],
+      "last_losses": {
+        "d_total": 1.2625312805175781,
+        "d_adversarial": -44.38325119018555,
+        "gradient_penalty": 4.564569473266602,
+        "d_attribute": 8.797136979410425e-05
+      }
+    },
+    "generator": {
+      "median_seconds": 0.35210008300782647,
+      "runs_seconds": [
+        0.3398275409999769,
+        0.3631698749959469,
+        0.35210008300782647
+      ],
+      "last_losses": {
+        "g_total": 42.32456970214844,
+        "g_adversarial": -25.61640739440918,
+        "g_attribute": 1.2603501081466675,
+        "g_reconstruction": 0.5533747673034668
+      }
+    }
+  }
+}

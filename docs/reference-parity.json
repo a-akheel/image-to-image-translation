@@ -1,0 +1,55 @@
+{
+  "tensorflow": "2.20.0",
+  "python": "3.12.14",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "devices": [
+    "CPU"
+  ],
+  "generator_sha256": "e595d1602e9ff3267c138342c6dfb530ef65842f1452d1ca6322760f0208a60e",
+  "image_sha256": "416c4abe36ee19fbe366f76ef3eb3b754b9ae092d358f1789a78cba792a1b842",
+  "generator_parameters": 43467011,
+  "cases": [
+    {
+      "case": "random_batch",
+      "intensity": 1.0,
+      "max_absolute_error": 1.2218952178955078e-06,
+      "mean_absolute_error": 1.4999962161255098e-07
+    },
+    {
+      "case": "random_batch",
+      "intensity": 2.0,
+      "max_absolute_error": 1.4007091522216797e-06,
+      "mean_absolute_error": 1.2053585862759064e-07
+    },
+    {
+      "case": "zeros",
+      "intensity": 1.0,
+      "max_absolute_error": 2.0302832126617432e-07,
+      "mean_absolute_error": 1.3484083183357143e-08
+    },
+    {
+      "case": "zeros",
+      "intensity": 2.0,
+      "max_absolute_error": 3.8743019104003906e-07,
+      "mean_absolute_error": 2.581419344949154e-08
+    },
+    {
+      "case": "real_image",
+      "intensity": 1.0,
+      "max_absolute_error": 3.2782554626464844e-07,
+      "mean_absolute_error": 3.24928315365014e-08
+    },
+    {
+      "case": "real_image",
+      "intensity": 2.0,
+      "max_absolute_error": 6.854534149169922e-07,
+      "mean_absolute_error": 4.173074685809297e-08
+    }
+  ],
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "passed": true,
+  "warm_batch1_runs": 10,
+  "warm_batch1_median_ms": 26.037957999506034,
+  "scope": "Inference equivalence to the frozen upstream graph; not training parity or editing quality."
+}

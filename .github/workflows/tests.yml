@@ -1,0 +1,23 @@
+name: Baseline checks
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.lock.txt
+      - run: python -m pytest -q
+      - run: python -m scripts.smoke_fixture
+      - run: >-
+          python -m attgan.train --config artifacts/synthetic-smoke/config.json
+          --images artifacts/synthetic-smoke/images
+          --manifests artifacts/synthetic-smoke/manifests
+          --run runs/smoke --max-steps 6
+      - run: >-
+          python -m attgan.train --config artifacts/synthetic-smoke/config.json
+          --images artifacts/synthetic-smoke/images
+          --manifests artifacts/synthetic-smoke/manifests
+          --run runs/smoke --resume --max-steps 12
