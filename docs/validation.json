@@ -1,0 +1,23 @@
+{
+  "local_date": "2026-10-08",
+  "unit_tests": {
+    "command": "python -m pytest -q",
+    "passed": 23
+  },
+  "cli_smoke": {
+    "images": "12 synthetic noise images, not face data",
+    "model": "dim=4,64px debug model",
+    "batch_updates": 12,
+    "epochs": 3,
+    "stopped_at_step": 6,
+    "resumed_at_step": 7,
+    "export_and_reconstruction_evaluation": "passed; not a quality measurement"
+  },
+  "full_architecture_mechanics": "see training-benchmark.json",
+  "pretrained_inference": "see reference-parity.json",
+  "real_dataset_download": "Official Google Drive quota error",
+  "real_data_training_completed": false,
+  "independent_attribute_evaluation_completed": false,
+  "research_extension_implemented": false,
+  "remote_ci_executed": false
+}

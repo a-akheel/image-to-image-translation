@@ -1,0 +1,72 @@
+{
+  "source": "LynnHo/AttGAN-Tensorflow pics/sample_validation.jpg, first 128x128 input cell",
+  "upstream_revision": "f1231fcc581133c9a7d8451e26a8bcd293fe03d5",
+  "source_grid_sha256": "361d5130d8c96b11bb6ca6628b69fc82a9d61cd86074893b48181ff214d7ad91",
+  "model": "Authors' pretrained AttGAN_128, imported into Keras",
+  "own_training": false,
+  "source_annotations_available": false,
+  "illustrative_base_labels": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0
+  ],
+  "attribute_order": [
+    "Bald",
+    "Bangs",
+    "Black_Hair",
+    "Blond_Hair",
+    "Brown_Hair",
+    "Bushy_Eyebrows",
+    "Eyeglasses",
+    "Male",
+    "Mouth_Slightly_Open",
+    "Mustache",
+    "No_Beard",
+    "Pale_Skin",
+    "Young"
+  ],
+  "variants": [
+    [
+      "Base condition",
+      {}
+    ],
+    [
+      "Glasses",
+      {
+        "Eyeglasses": 1
+      }
+    ],
+    [
+      "Bangs",
+      {
+        "Bangs": 1
+      }
+    ],
+    [
+      "Blond hair",
+      {
+        "Blond_Hair": 1
+      }
+    ],
+    [
+      "Blond + glasses",
+      {
+        "Blond_Hair": 1,
+        "Eyeglasses": 1
+      }
+    ]
+  ],
+  "intensity": 2,
+  "preprocessing": "Already preprocessed upstream input cell; no additional resize/crop",
+  "limitations": "Demonstration only; not held-out evaluation, reconstruction accuracy, or our training results."
+}
